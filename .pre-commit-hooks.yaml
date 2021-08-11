@@ -1,6 +1,5 @@
 -   id: qs-cfn-lint
     name: AWS Quick Start Linter
-    entry: cfn-lint
+    entry: cfn-lint --append-rules=./qs-cfn-lint-rules/
     language: python
-    args: ["--append-rules=./qs-cfn-lint-rules/"]
     files: \.(json|yaml|yml)$
